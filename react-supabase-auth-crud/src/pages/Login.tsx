@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import {useState} from 'react'
 import { supabaseSignIn } from '../supabase/client'
 
 export const Login = () => {
@@ -7,7 +7,6 @@ export const Login = () => {
 	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault()
 		supabaseSignIn(email)
-
 	}
 
 	return (
